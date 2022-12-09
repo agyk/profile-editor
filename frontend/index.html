@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Profile editor</title>
+		
+		<link rel="stylesheet" href="public/style.css" />
+		
+
+		<link
+			href="https://fonts.googleapis.com/css2?family=Montserrat&family=Source+Sans+Pro&display=swap"
+			rel="stylesheet"
+		/>
+	</head>
+	<body>
+		<div id="root">
+
+			<div id="titleImg">
+				<h2>Profile editor</h2>
+				<img src="" id="profImg" alt="profile image">
+			</div>
+
+			<form action="" id="form">
+				<label for="firstName" >First name:</label>
+				<input type="text" id="firstName"  placeholder="first name" >
+				<label for="surname">Surname:</label>
+				<input type="text" id="surname" placeholder="surname" >
+				<label for="zip">Zip:</label>
+				<input type="number"  id="zip">
+				<label for="country">Country:</label>
+				<input type="text" id="country" >
+				<label for="city">City:</label>
+				<input type="text" id="city">
+				<label for="street">Street:</label>
+				<input type="text" id="street">
+				<label for="houseNum">House number:</label>
+				<input type="number" id="houseNum">
+				<label for="img">Select profile image:</label>
+				<input type="file" id="img" name="img" accept="image/*">
+				<label for="introduction">Introduction:</label>
+				<textarea id="introduction" name="introduction" rows="4" cols="10" placeholder="Tell us about yourself..."></textarea>
+			</form>
+		
+			<div id="buttons">
+				<button id="save">Save</button>
+				<button id="delete">Delete</button>
+			</div>	
+		</div>
+
+
+		<div id="profileData">
+			<p>Name:</p>
+			<h3 id="showName"></h3>
+			<p>Zip:</p>
+			<h3 id="showZip"></h3>
+			<p>Country:</p>
+			<h3 id="showCountry"></h3>
+			<p>City:</p>
+			<h3 id="showCity"></h3>
+			<p>Street:</p>
+			<h3 id="showStreet"></h3>
+			<p>House number:</p>
+			<h3 id="showhouseNum"></h3>
+			<p>Introduction:</p>
+			<h3 id="showintroduction"></h3>
+
+		</div>
+
+
+		<div id="container">
+			<div class="message">
+            Your profile saved succesfully!
+			</div>
+        <button class="yes">okay</button>
+		</div>
+
+		<div id="alertDel">
+			<div class="message">
+            Do you want to delete your profile?
+			</div>
+        <button class="yes">yes</button>
+		<button class="no">no</button>
+		</div>
+
+
+		<script src=
+		"https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js">
+			</script>
+		<script src="public/script.js"></script>
+	</body>
+</html>
